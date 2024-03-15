@@ -1,6 +1,8 @@
 {
-    "scripts":{
+    "scripts": {
         "server": "json-server -w db.json"
-
+    },
+    "dependencies": {
+        "express": "^4.18.3"
     }
 }
