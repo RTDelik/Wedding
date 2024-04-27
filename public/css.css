@@ -1,0 +1,262 @@
+@font-face {
+    font-family: Miama Nueva;
+    /* Гарнитура шрифта */
+    src: url(font/ofont.ru_Miama\ Nueva.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    height: 10vh;
+    background: #fdfdfd;
+}
+
+ .content {
+    background: #fdfdfd;
+    /* display: flex;
+    background-size: 100%;
+    justify-content: center;
+    background-repeat: repeat-y;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; */
+}
+/*
+.blur {
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    height: 300%;
+    width: 100%;
+    position: absolute;
+    top: -30px;
+} */
+
+.content-main {
+    position: relative;
+    background: url(img/gypsophila_3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30vh;
+}
+
+.content-main-logo {
+    /* padding-bottom: 10vh;
+    height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center; */
+    text-shadow: 0px 1vh 1vh rgba(0, 0, 0, 0.25);
+}
+
+#NameM {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Miama Nueva;
+    font-size: 6vh;
+    font-weight: 400;
+    /* line-height: 39px; */
+    letter-spacing: 3px;
+    text-align: center;
+    /* width: 169.72px; */
+    /* height: 88.77px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin: 20px; */
+}
+
+#NameW {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Miama Nueva;
+    font-size: 6vh;
+    font-weight: 400;
+    /* line-height: 39px; */
+    letter-spacing: 3px;
+    text-align: center;
+    /* width: 190.98px; */
+    /* height: 88.77px; */
+    position: relative;
+    left: 10vh;
+    margin: 0;
+}
+
+#and {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: Miama Nueva;
+    font-size: 16vh;
+    font-weight: 400;
+    /* line-height: 105px; */
+    /* letter-spacing: 3px; */
+    text-align: center;
+    /* width: 160.59px; */
+    /* height: 77.4px; */
+    margin: 0px;
+    /* position: relative; */
+    /* top: -10px; */
+}
+
+.content-main-clock {
+    border-top: 0.1vh solid rgba(0, 0, 0, 0.22);
+    background: rgba(255, 255, 255, 0.49);
+    width: 100vw;
+    box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bloc-time {
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-main-clock span {
+    padding-top: 5vh;
+    width: 11vh;
+    height: 5vh;
+    transform: skew(-30deg, 0deg);
+    box-sizing: border-box;
+    border: 0.3vh solid rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+    background: radial-gradient(69.00% 69.00% at 50% 50%, rgba(161, 162, 161, 0) 37.696%, rgb(220, 227, 220) 100%);
+}
+
+.bloc-time p {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Miama Nueva;
+    font-size: 2.5vh;
+    font-weight: bolder;
+}
+
+.bloc-time span p {
+    transform: skew(30deg, 0deg);
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.5em;
+    margin-left: -0.625em;
+}
+
+
+/* .content-main-final { */
+    /* height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+/* } */
+
+.content-main-final p {
+    opacity: 0.84;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Miama Nueva;
+    font-size: 4vh;
+    font-weight: 600;
+    line-height: 9vh;
+    letter-spacing: 1vh;
+    text-align: center;
+    /* margin-left: 35px; */
+    /* margin-right: 35px; */
+    /* width: 900px; */
+}
+
+.content-one {
+    position: relative;
+    background: linear-gradient(90deg, #f2f0f1 0%, #f9f9f9 30%, #f8fafa 50%, #f7f6f8 100%);
+    width: 100%;
+    /* height: 600px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-one .elips {
+    display: flex;
+    flex-basis: content;
+    contain: content;
+    flex-direction: column;
+    background-color: #DCE3DC;
+    width: 150vh;
+    height: 90vh;
+    border-radius: 50%;
+    justify-content: space-around;
+}
+
+.content-one .linear {
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    background-image: url(img/Линия\ 2.svg);
+    width: 80%;
+    height: 58%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-one .card {
+    margin: 5vh;
+    height: 19vh;
+    background-color: #fbfbfb;
+}
+
+.content-one .card img {
+    margin: 1vh;
+    width: 90%;
+    height: 70%;
+}
+
+.content-one .cont-card {
+    display: flex;
+    padding-top: 11vh;
+    justify-content: center;
+}
+.content-one .cont-card .one {
+    transform: rotate(-20deg);
+    z-index: 9;
+}
+.content-one .cont-card .two {
+    transform: rotate(5deg) translateY(-6vh);
+    z-index: 11;
+}
+.content-one .cont-card .three {
+    transform: rotate(-8deg) translateY(-13vh);
+    z-index: 11;
+}
+.content-one .cont-card .four {
+    transform: rotate(5deg) translateY(-4vh);
+    z-index: 9;
+}
+.content-one .text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-one .text h1 {
+    font-size: 5vh;
+}
+.content-one .text h2 {
+    font-size: 3.4vh;
+}
+.content-one .text h4 {
+    font-size: 2.3vh;
+}
