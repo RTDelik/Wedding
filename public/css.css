@@ -41,11 +41,11 @@ header {
     background: url(img/gypsophila_3.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30vh;
+    gap: 10vh;
 }
 
 .content-main-logo {
@@ -63,15 +63,9 @@ header {
     font-family: Miama Nueva;
     font-size: 6vh;
     font-weight: 400;
-    /* line-height: 39px; */
-    letter-spacing: 3px;
-    text-align: center;
-    /* width: 169.72px; */
-    /* height: 88.77px; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* margin: 20px; */
+    letter-spacing: 0.1vw;
+    position: relative;
+    left: -10vw;
 }
 
 #NameW {
@@ -79,14 +73,9 @@ header {
     font-family: Miama Nueva;
     font-size: 6vh;
     font-weight: 400;
-    /* line-height: 39px; */
-    letter-spacing: 3px;
-    text-align: center;
-    /* width: 190.98px; */
-    /* height: 88.77px; */
+    letter-spacing: 0.1vw;
     position: relative;
-    left: 10vh;
-    margin: 0;
+    left: 10vw;
 }
 
 #and {
@@ -94,14 +83,8 @@ header {
     font-family: Miama Nueva;
     font-size: 16vh;
     font-weight: 400;
-    /* line-height: 105px; */
-    /* letter-spacing: 3px; */
     text-align: center;
-    /* width: 160.59px; */
-    /* height: 77.4px; */
     margin: 0px;
-    /* position: relative; */
-    /* top: -10px; */
 }
 
 .content-main-clock {
@@ -111,7 +94,10 @@ header {
     box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 0vh 15vw;
+    /* flex-direction: column; */
 }
 
 .bloc-time {
@@ -123,7 +109,7 @@ header {
 
 .content-main-clock span {
     padding-top: 5vh;
-    width: 11vh;
+    width: 15vh;
     height: 5vh;
     transform: skew(-30deg, 0deg);
     box-sizing: border-box;
@@ -145,7 +131,7 @@ header {
     font-size: 3vh;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 47%;
     margin-top: -0.5em;
     margin-left: -0.625em;
 }
@@ -163,14 +149,13 @@ header {
     opacity: 0.84;
     color: rgba(0, 0, 0, 0.7);
     font-family: Miama Nueva;
-    font-size: 4vh;
+    font-size: 3vmax;
     font-weight: 600;
-    line-height: 9vh;
-    letter-spacing: 1vh;
+    line-height: 8vmax;
+    /* letter-spacing: 1vh; */
     text-align: center;
     /* margin-left: 35px; */
     /* margin-right: 35px; */
-    /* width: 900px; */
 }
 
 .content-one {
