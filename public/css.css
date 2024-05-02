@@ -159,6 +159,7 @@ header {
 }
 
 .content-one {
+overflow: hidden;
     position: relative;
     /* background: linear-gradient(90deg, #f2f0f1 0%, #f9f9f9 30%, #f8fafa 50%, #f7f6f8 100%); */
     width: 100vw;
