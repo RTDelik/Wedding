@@ -223,11 +223,11 @@ h4 {
 
 .content-two {
     position: relative;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     z-index: 9;
     top: -5vh;
-    background-image: url(/public/img/Фон.png);
-    background-size: cover;
+    background-image: url(img/Фон.png);
+    background-size: contain;
     background-position-x: center;
     font-family: Miama Nueva;
     display: flex;
