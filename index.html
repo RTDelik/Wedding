@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css.css">
+    <script src="public/script.js"></script>
     <title>Document</title>
 </head>
 
@@ -12,62 +13,65 @@
     <header>
 
     </header>
-    <div class="content">
-        <div class="blur"></div>
-        <span class="content-main">
-            <div class="content-main-logo">
-                <p id="NameM">Андрей</p>
-                <p id="and">&</p>
-                <p id="NameW">Валерия</p>
-            </div>
-            <div class="content-main-clock">
+    <span class="content main">
+        <!-- <img src="public/img/Гипс.png"> -->
+        <div class="content main-logo">
+            <p id="NameM">Андрей</p>
+            <p id="and">&</p>
+            <p id="NameW">Валерия</p>
+        </div>
+        <div class="main-clock">
+            <div class="bloc-time-all">
+                
                 <div class="bloc-time">
                     <span>
-                        <p>26</p>
-                    </span>
-                    <p>Недель</p>
-                </div>
-                <div class="bloc-time">
-                    <span>
-                        <p>07</p>
+                        <p id="day">07</p>
                     </span>
                     <p>Дней</p>
                 </div>
                 <div class="bloc-time">
                     <span>
-                        <p>24</p>
+                        <p id="hours">24</p>
                     </span>
                     <p>Часов</p>
                 </div>
                 <div class="bloc-time">
                     <span>
-                        <p>60</p>
+                        <p id="minute">60</p>
                     </span>
                     <p>Минут</p>
                 </div>
+                <div class="bloc-time">
+                    <span>
+                        <p id="seconds">26</p>
+                    </span>
+                    <p>Секунд</p>
+                </div>
             </div>
-            <div class="content-main-final">
-                <p>Приглашаем вас на очень при очень долгожданную свадьбу</p>
-                <p>12.10.2024 г</p>
-            </div>
-            <!-- <img src="public\img\gypsophila_2.png"> -->
-        </span>
-        <span class="content-one">
+        </div>
+        <div class="content main-final">
+            <p>Приглашаем вас на очень при очень долгожданную свадьбу</p>
+            <p>12.10.2024 г</p>
+        </div>
+        <!-- <img src="public\img\gypsophila_2.png"> -->
+    </span>
+    <div class="content all">
+        <span class="content one">
             <div class="elips">
                 <!-- <img src="/public/img/Линия 1.svg" class="linear2"> -->
                 <div class="cont-card">
                     <div class="linear">
                     </div>
-                    <div class="card one">
+                    <div class="card card-one">
                         <img src="public/img/DSC_6472.png">
                     </div>
-                    <div class="card two">
+                    <div class="card card-two">
                         <img src="public/img/DSC_7232.png">
                     </div>
-                    <div class="card three">
+                    <div class="card card-three">
                         <img src="public/img/DSC_7232.png">
                     </div>
-                    <div class="card four">
+                    <div class="card card-four">
                         <img src="public/img/DSC_6472.png">
                     </div>
                 </div>
@@ -78,7 +82,7 @@
                 </div>
             </div>
         </span>
-        <span class="content-two">
+        <span class="content two">
             <h1>Так же</h1>
             <h2>Будем благодарны, если при выборе нарядов вы придержитесь следующей палитры</h2>
             <div class="color-block">
@@ -88,50 +92,72 @@
                 <div class="color color-four" style="background-color: #E4C9B6;"></div>
                 <div class="color color-five" style="background-color: #B0C296;"></div>
             </div>
-            <span class="content-three">
-                <h1>Анкета</h1>
-                <div class="divH2">
-                    <h2>Ответьте, пожалуйста, на несколько вопросов, для нас это важно!</h2>
-                </div>
-                <form >
-                    <h2>Ваше имя и фамилия</h2>
-                    <input id="FI">
-                    <h2>В каком составе вас ждать?<br>(супруги, вторые половинки, дети)</h2>
-                    <input id="family"></input>
-                    <h2>Подтвердите своё присутствие</h2>
-                    <div class="presence">
-                        <p><input type="radio" name="presence">Да, с удовольствием</p>
-                        <p><input type="radio" name="presence">К сожалению, не смогу (не сможем)</p>
-                        <p><input type="radio" name="presence">Нужно время подумать</p>
-                    </div>
-                    <h2>Уточните ваши предпочтения в алкоголе и еде</h2>
-                    <h2>Алкоголь:</h2>
-                    <div class="alcohol">
-                        <p><input type="checkbox" name="alcohol">Вино красное полусладкое</p>
-                        <p><input type="checkbox" name="alcohol">Вино красное сухое</p>
-                        <p><input type="checkbox" name="alcohol">Вино белое полусладкое</p>
-                        <p><input type="checkbox" name="alcohol">Вино белое сухое</p>
-                        <p><input type="checkbox" name="alcohol">Шампанское</p>
-                        <p><input type="checkbox" name="alcohol">Водка</p>
-                        <p><input type="checkbox" name="alcohol">Коньяк</p>
-                        <p><input type="checkbox" name="alcohol">Только безалкогольные напитки</p>
-                    </div>
-                    <h2>Еда:</h2>
-                    <div class="meal">
-                        <p><input type="radio" name="meal">Рыба</p>
-                        <p><input type="radio" name="meal">Мясо</p>
-                        <p><input type="radio" name="meal">Вегетарианец</p>
-                    </div>
-                    <h2>Если у вас есть аллергия на какие-либо продукты укажите об этом в графе ниже</h2>
-                    <input id="allergy">
-                    <!-- <div class="container"> -->
-                    <button id="button"></button>
-                      <!-- </div> -->
-                    <!-- <button>Отправить</button> -->
-                </form>
-            </span>
         </span>
-
+        <span class="content three">
+            <h1>Анкета</h1>
+            <div class="questionnaire">
+                <!-- <h2>Ответьте, пожалуйста, на несколько вопросов, для нас это важно!</h2> -->
+                <h2>Пожалуйста подтвердите присутствие до 23.09.2024г</h2>
+            </div>
+            <form >
+                <h2>Ваше имя и фамилия</h2>
+                <input id="FI">
+                <h2>В каком составе вас ждать?<br>(супруги, вторые половинки, дети)</h2>
+                <input id="family"></input>
+                <h2>Подтвердите своё присутствие</h2>
+                <div class="presence">
+                    <p><input type="radio" name="presence">Да, с удовольствием</p>
+                    <p><input type="radio" name="presence">К сожалению, не смогу (не сможем)</p>
+                    <p><input type="radio" name="presence">Нужно время подумать</p>
+                </div>
+                <h2>Уточните ваши предпочтения в алкоголе и еде</h2>
+                <h2>Алкоголь:</h2>
+                <div class="alcohol">
+                    <p><input type="checkbox" name="alcohol">Вино красное полусладкое</p>
+                    <p><input type="checkbox" name="alcohol">Вино красное сухое</p>
+                    <p><input type="checkbox" name="alcohol">Вино белое полусладкое</p>
+                    <p><input type="checkbox" name="alcohol">Вино белое сухое</p>
+                    <p><input type="checkbox" name="alcohol">Шампанское</p>
+                    <p><input type="checkbox" name="alcohol">Водка</p>
+                    <p><input type="checkbox" name="alcohol">Коньяк</p>
+                    <p><input type="checkbox" name="alcohol">Только безалкогольные напитки</p>
+                </div>
+                <h2>Еда:</h2>
+                <div class="meal">
+                    <p><input type="radio" name="meal">Рыба</p>
+                    <p><input type="radio" name="meal">Мясо</p>
+                    <p><input type="radio" name="meal">Вегетарианец</p>
+                </div>
+                <h2>Если у вас есть аллергия на какие-либо продукты укажите об этом в графе ниже</h2>
+                <input id="allergy">
+                <!-- <div class="container"> -->
+                <input type="button" id="button">
+                <!-- <button id="button"></button> -->
+                  <!-- </div> -->
+                <!-- <button>Отправить</button> -->
+            </form>
+            <button>Подтверждаем</button>
+        </span>
+        <span class="content four">
+            <h1>Тайминг дня</h1>
+            <div class="broder broder-one">
+                <h2>Сборы гостей</h2><h2>15:00</h2>
+            </div>
+            <div class="broder broder-two">
+                <h2>Выездная регистрация</h2><h2>15:30</h2>
+            </div>
+            <div class="broder broder-one">
+                <h2>Банкет</h2><h2>16:00</h2>
+            </div>
+        </span>
+        <span class="content five">
+            <div class="broder broder-one">
+                <h2>Ждём вас по адресу: г. Волжский, микрорайон Южный, ул. Покровская 7</h2>
+            </div>
+            <div class="map">
+                <img src="/public/img/Карта.png">
+            </div>
+        </span>
     </div>
 
 </html>
