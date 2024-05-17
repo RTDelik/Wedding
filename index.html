@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css.css">
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script src="public/script.js"></script>
     <title>Document</title>
 </head>
@@ -99,11 +100,11 @@
                 <!-- <h2>Ответьте, пожалуйста, на несколько вопросов, для нас это важно!</h2> -->
                 <h2>Пожалуйста подтвердите присутствие до 23.09.2024г</h2>
             </div>
-            <form >
+            <form id="contactForm">
                 <h2>Ваше имя и фамилия</h2>
-                <input id="FI">
+                <input name="FI">
                 <h2>В каком составе вас ждать?<br>(супруги, вторые половинки, дети)</h2>
-                <input id="family"></input>
+                <input name="family"></input>
                 <h2>Подтвердите своё присутствие</h2>
                 <div class="presence">
                     <p><input type="radio" name="presence">Да, с удовольствием</p>
@@ -129,14 +130,14 @@
                     <p><input type="radio" name="meal">Вегетарианец</p>
                 </div>
                 <h2>Если у вас есть аллергия на какие-либо продукты укажите об этом в графе ниже</h2>
-                <input id="allergy">
+                <input name="allergy">
                 <!-- <div class="container"> -->
-                <input type="button" id="button">
+                <!-- <input type="button" id="button"> -->
                 <!-- <button id="button"></button> -->
                   <!-- </div> -->
-                <!-- <button>Отправить</button> -->
+                <button>Отправить</button>
             </form>
-            <button>Подтверждаем</button>
+            <button id="confirmation" onclick="confirmation()">Подтверждаем</button>
         </span>
         <span class="content four">
             <h1>Тайминг дня</h1>
