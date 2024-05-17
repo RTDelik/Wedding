@@ -305,8 +305,13 @@ header {
                 font-style: italic;
             }
         }
-        form {
+        
+        form{
+            opacity: 0;
+            animation: ani 5s forwards;
             display: none;
+            /* display:initial; */
+            /* height: auto; */
             width: 60%;
             /* gap: 0vh; */
             border: 0.2vmax solid rgba(0, 0, 0, 0.25);
@@ -332,6 +337,7 @@ header {
                 font-size: 2vmax;
             } */
         }
+        
         button {
             color: rgba(70, 70, 70, 1);
             font-size: var(--font_h2);
@@ -368,7 +374,10 @@ header {
         }
     }
 }
-
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 @media screen and (orientation:portrait) {
     .content.main {
         background: url(img/Гипс3.png), #fbfbfb;
