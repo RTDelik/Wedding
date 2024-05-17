@@ -1,3 +1,9 @@
+emailjs.init("Qppb5Oxl1RGtJrmoo"); // Этот ID будет вашим виртуальным почтальоном
+
+// let s = document.querySelector('#contactForm');
+// console.log(s)
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // конечная дата, например 1 июля 2021
     const deadline = new Date(2024, 10, 12);
@@ -36,3 +42,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
   });
+  function confirmation () {
+      let d = document.querySelector('form');
+      d.style.display = 'initial'
+      // d.classList.toggle('active')
+      let a = document.querySelector('.questionnaire>h2')
+      a.innerText = 'И ответьте, пожалуйста, на несколько вопросов, для нас это важно!'
+      document.querySelector('#contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Не обновляйте страницу, пока сообщение не отправлено
+  emailjs.sendForm('service_irv9ab8', 'template_xvi2xxw', this)
+      .then(function() {
+          alert('Сообщение успешно отправлено!');
+      }, function(error) {
+          alert('Ошибка отправки: ' + error);
+      });
+});
+
+    //   console.log(a);
+  }
