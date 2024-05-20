@@ -343,7 +343,7 @@ header {
     padding-bottom: 5vmax;
 }
 
-.all>.three>form>p {
+.all>.three>form>div>p {
     font-family: Miama Nueva;
     font-size: var(--font_p);
 }
@@ -374,19 +374,21 @@ header {
     gap: 5vh;
 }
 
-.all>.four>h1,
-h2 {
+.all>.four>h1 {
+    font-family: Miama Nueva;
+}
+.all>.four>.broder>h2 {
     font-family: Miama Nueva;
 }
 
-.all>.broder {
+.all>.four>.broder {
     display: flex;
     width: 100vw;
     flex-direction: column;
     align-items: center;
 }
 
-.all>.broder-one {
+.all>.four>.broder.broder-one {
     border-top: 0.1vh solid rgba(0, 0, 0, 0.22);
     box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
 }
