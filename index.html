@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css.css">
@@ -11,6 +13,7 @@
 </head>
 
 <body>
+
     <header>
 
     </header>
@@ -102,7 +105,7 @@
             </div>
             <form id="contactForm">
                 <h2>Ваше имя и фамилия</h2>
-                <input name="FI">
+                <input id="FI" name="FI">
                 <h2>В каком составе вас ждать?<br>(супруги, вторые половинки, дети)</h2>
                 <input name="family"></input>
                 <h2>Подтвердите своё присутствие</h2>
@@ -135,9 +138,9 @@
                 <!-- <input type="button" id="button"> -->
                 <!-- <button id="button"></button> -->
                   <!-- </div> -->
-                <button>Отправить</button>
+                <button class="btn">Отправить</button>
             </form>
-            <button id="confirmation" onclick="confirmation()">Подтверждаем</button>
+            <button class="btn" id="confirmation" onclick="confirmation()">Подтверждаем</button>
         </span>
         <span class="content four">
             <h1>Тайминг дня</h1>
@@ -153,10 +156,12 @@
         </span>
         <span class="content five">
             <div class="broder broder-one">
-                <h2>Ждём вас по адресу: г. Волжский, микрорайон Южный, ул. Покровская 7</h2>
+                <h2>
+                    <a href="https://yandex.ru/maps/-/CDbxuXJh">Ждём вас по адресу: г. Волжский, микрорайон Южный, ул. Покровская 7</a>
+                </h2>
             </div>
             <div class="map">
-                <img src="/public/img/Карта.png">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa856a98aaeef6920cc0446d66dae23325d4b04d0435229252c828f25e7d7b807&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </span>
     </div>
