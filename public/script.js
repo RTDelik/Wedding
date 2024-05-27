@@ -26,8 +26,6 @@ function equipmentCallBack(type) {
   return a;
 };//Возвращает выбранный тип оборудования
 
-let FI = document.querySelector('#FI')
-FI.value = equipmentCallBack('FI')
 
 emailjs.init("Qppb5Oxl1RGtJrmoo"); // Этот ID будет вашим виртуальным почтальоном
 
