@@ -458,7 +458,7 @@ header {
 
 .all>.Questionnaire>form>input {
     font-size: 5vmin;
-    width: 60%;
+    width: 80%;
 }
 
 /* div {
@@ -489,6 +489,7 @@ header {
 
 .all>.TimingDay {
     gap: 2vh;
+    padding-bottom: 4vh;
 }
 
 .all>.TimingDay>h1 {
