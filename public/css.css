@@ -1,0 +1,617 @@
+@font-face {
+    font-family: Miama Nueva;
+    /* Гарнитура шрифта */
+    src: url(font/ofont.ru_Miama\ Nueva.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+:root {
+    --font_h1: 6vmin;
+    --font_h2: 4vmin;
+    --font_h4: 3vmin;
+    --font_p: 3vmin;
+}
+
+h1 {
+    font-size: var(--font_h1);
+}
+
+h2 {
+    font-size: var(--font_h2);
+}
+
+h4 {
+    font-size: var(--font_h4);
+}
+
+p {
+    font-size: var(--font_p);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    color: rgba(70, 70, 70, 1);
+}
+
+header {
+    background: #fdfdfd;
+}
+
+
+
+.content {
+    overflow: hidden;
+    /* background: #fbfbfb; */
+    padding: 0vh 0;
+    /* padding: 10vh 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80vw; */
+}
+
+.all>.content {
+    background: linear-gradient(90deg, #cfd0d03b 0%, #e6e6e5 20%, #e6e6e6 80%, #cfd0d03b 100%, transparent);
+    padding: 2vh 0;
+}
+
+.main {
+    /* background: url(img/16401064-1607068596-1640x1064.jpg), #fbfbfb; */
+    background: url(img/Гипс.png) -54vw -39vh, url(img/Гипс1.png) 58vw -38vh, #fbfbfb;
+    background-size: contain;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    gap: 10vh;
+    width: 100vw;
+
+}
+
+.main-logo {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    width: 80%;
+}
+
+.main-clock {
+    display: flex;
+    border-top: 0.1vh solid rgba(0, 0, 0, 0.22);
+    background: rgba(255, 255, 255, 0.49);
+    width: 100vw;
+    box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
+    justify-content: center;
+}
+
+.bloc-time-all {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 0vh 8vw; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bloc-time {
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Miama Nueva;
+    width: 13vmax;
+    align-items: center;
+}
+
+.bloc-time>span {
+    padding-top: 5vh;
+    position: relative;
+    width: 10vmax;
+    height: 10vh;
+    transform: skew(-30deg, 0deg);
+    box-sizing: border-box;
+    border: 0.3vh solid rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+    background: radial-gradient(69.00% 69.00% at 50% 50%, rgba(161, 162, 161, 0) 37.696%, rgb(220, 227, 220) 100%);
+}
+
+.bloc-time>span>p {
+    font-weight: bolder;
+    font-size: var(--font_h4);
+    transform: skew(30deg, 0deg);
+    /* color: rgb(0, 0, 0); */
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    margin-top: -0.5em;
+    margin-left: -0.625em;
+}
+
+.bloc-time>p {
+    font-size: var(--font_h4);
+    width: 100%;
+    text-align: start;
+    font-weight: bolder;
+}
+
+.main-final {
+    width: 80%;
+    background-image: url(img/птичка.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.main-final p {
+    opacity: 0.84;
+    color: rgba(70, 70, 70, 1);
+    font-family: Miama Nueva;
+    font-size: var(--font_h1);
+    font-weight: 600;
+    line-height: 8vmax;
+    text-align: center;
+}
+
+#NameM {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Miama Nueva;
+    font-size: 6vh;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    position: relative;
+    left: -10vw;
+}
+
+#NameW {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Miama Nueva;
+    font-size: 6vh;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    position: relative;
+    left: 10vw;
+}
+
+#and {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: Miama Nueva;
+    font-size: 16vh;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+}
+
+.all {
+    background: linear-gradient(#fbfbfb 5%, #f9f9f900 30%), url(img/Фон.png);
+    background-size: contain;
+    width: 100%;
+    position: relative;
+}
+
+.separator {
+    width: 100%;
+    background-image: url(img/разделитель.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vmax;
+
+}
+
+.separator.sep_one {
+    background-image: url(img/разделитель.png), linear-gradient(#fbfbfb 5%, #e6e6e6 90%);
+}
+.separator.sep_two {
+    background-image: linear-gradient(#e6e6e6 5%, #e6e6e69e 90%);
+}
+/* .separator.sep_two {
+    background-image: url(img/разделитель.png), linear-gradient(#e6e6e6 5%, #e6e6e69e 90%);
+} */
+.separator.sep_TimingDay {
+    background-image: url(img/Лебеди.png);
+    background-position-x: center;
+}
+
+
+.all>.one {
+    width: 100%;
+    background-image: linear-gradient(#e6e6e6 0%, #e6e6e6 30%);
+}
+
+.all>.one>.elips {
+    z-index: 10;
+    display: flex;
+    flex-basis: content;
+    contain: content;
+    flex-direction: column;
+    background-color: #DCE3DC;
+    width: 250vw;
+    height: 90vh;
+    border-radius: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.all>.one>.elips>.cont-card {
+    display: flex;
+    padding: 5vmax 0;
+    gap: 6vh 6vw;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.all>.one>.elips>.cont-card>.linear {
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    background-image: url(img/Линия\ 2.svg);
+    width: 95vmax;
+    height: 15vmax;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all>.one>.elips>.cont-card>.card {
+    height: 13vmax;
+    background-color: #fbfbfb;
+}
+
+.all>.one>.elips>.cont-card>.card>img {
+    margin: 1vh;
+    height: 70%;
+}
+
+.all>.one>.elips>.cont-card>.card-one {
+    transform: rotate(10deg);
+    z-index: 9;
+}
+
+.all>.one>.elips>.cont-card>.card-two {
+    /* transform: rotate(5deg) translateY(-6vh); */
+    transform: rotate(-5deg) translateY(0vh);
+    z-index: 11;
+}
+
+.all>.one>.elips>.cont-card>.card-three {
+    /* transform: rotate(-8deg) translateY(-13vh); */
+    transform: rotate(-8deg) translateY(-0vh);
+    z-index: 11;
+}
+
+.all>.one>.elips>.cont-card>.card-four {
+    /* transform: rotate(5deg) translateY(-4vh); */
+    transform: rotate(5deg) translateY(0vh);
+    z-index: 9;
+}
+
+.all>.one>.elips>.text {
+    width: 80vw;
+}
+
+.all>.one>.elips>.text>h1 {
+    font-size: var(--font_h1);
+    text-align: end;
+}
+
+.all>.one>.elips>.text>h2 {
+    font-size: var(--font_h2);
+    text-align: start;
+}
+
+.all>.one>.elips>.text>h4 {
+    font-size: var(--font_h4);
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.all>.DressCode {
+    font-family: Miama Nueva;
+    text-align: center;
+    line-height: 7vmax;
+    color: rgba(70, 70, 70, 1);
+    gap: 1vh;
+    padding-bottom: 6vh;
+}
+
+.all>.DressCode>h1 {
+    opacity: 0.84;
+    font-size: var(--font_h1);
+}
+
+.all>.DressCode>h2 {
+    width: 65%;
+    font-size: var(--font_h2);
+}
+
+.all>.DressCode>.color-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6vh 4vw;
+    justify-content: center;
+}
+.all>.DressCode>.container-color-blok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6vh 4vw;
+    justify-content: center;
+    width: 80%;
+}
+.all>.DressCode>.container-color-blok>.color-block.hidden{
+    display: none;
+}
+.all>.DressCode>.container-color-blok>.color-block{
+    width: 50%;
+}
+.all>.DressCode>.container-color-blok>.empty{
+    width: 40%;
+}
+
+.all>.DressCode>.container-color-blok>.color-block>.color {
+    width: 5vmax;
+    border: 0.1vmax solid rgba(0, 0, 0, 0.25);
+    height: 5vmax;
+    border-radius: 50%;
+    box-shadow: 2vmax 3vmax 2.5vmax 0px rgba(0, 0, 0, 0.25);
+}
+.all>.DressCode>.container-color-blok>.color-block img {
+    width: 5vmax;
+    height: 5vmax;
+    
+}
+
+.all>.Wishes {
+    font-family: Miama Nueva;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 5vmax;
+}
+
+.all>.Wishes>div>p {
+    font-weight: bold;
+}
+.all>.Wishes>div>img {
+    width: 30%;
+    align-self: center;
+
+}
+
+.all>.Wishes>div .p-text {
+    width: 65%;
+}
+.all>.Wishes .p-left {
+    text-align: start;
+}
+.all>.Wishes .p-right {
+    text-align: end;
+}
+
+.all>.Wishes>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+
+.all>.Questionnaire {
+    width: 100%;
+    /* background: linear-gradient(0deg, #e3e1ee00 0%, #e3e3e3 20%, #e3e3e3 70%, #e3e1ee00 100%); */
+}
+
+.all>.Questionnaire>h1 {
+    font-family: Miama Nueva;
+}
+
+.all>.Questionnaire>.questionnaire {
+    border-top: 0.1vh solid rgba(0, 0, 0, 0.22);
+    background: rgba(255, 255, 255, 0.49);
+    width: 100vw;
+    box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
+    text-align: center;
+}
+
+.all>.Questionnaire>.questionnaire>h2 {
+    margin: 5vmin auto;
+    width: 70%;
+    font-style: italic;
+}
+
+.all>.Questionnaire>#indicator {
+    transform: rotate(180deg);
+    line-height: 0.5;
+    font-family: fantasy;
+    font-stretch: ultra-expanded;
+    margin: 1vh 0 0 0;
+}
+
+.all>.Questionnaire>form {
+    opacity: 0;
+    animation: ani 5s forwards;
+    display: none;
+    /* display:initial; */
+    /* height: auto; */
+    width: 60%;
+    /* gap: 0vh; */
+    border: 0.2vmax solid rgba(0, 0, 0, 0.25);
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    background-color: #dce3dc;
+    padding: 0px 10vw;
+    /* border-top-width: 0; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 5vmax;
+    margin-top: 1vh;
+}
+
+.all>.Questionnaire>form>div>p {
+    font-family: Miama Nueva;
+    font-size: var(--font_p);
+}
+
+.all>.Questionnaire>form>input {
+    font-size: 5vmin;
+}
+
+/* div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 2vmax;
+            } */
+
+/* .all>.Questionnaire>button {
+    color: rgba(70, 70, 70, 1);
+    font-size: var(--font_h2);
+    border-radius: 4%;
+    padding: 5vmin 0;
+    background: linear-gradient(#f1f1f1 0%, #9E9E9E 10%, #f1f1f1 90%, #9E9E9E 100%);
+    width: 100vw;
+    box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
+} */
+/* .all>.Questionnaire>form>button {
+    color: rgba(70, 70, 70, 1);
+    font-size: var(--font_h2);
+    border-radius: 4%;
+    padding: 5vmin 0;
+    background: linear-gradient(#f1f1f1 0%, #9E9E9E 10%, #f1f1f1 90%, #9E9E9E 100%);
+    width: 80%;
+    box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
+} */
+
+.all>.TimingDay {
+    gap: 2vh;
+}
+
+.all>.TimingDay>h1 {
+    font-family: Miama Nueva;
+}
+
+.all>.TimingDay>.broder>h2 {
+    font-family: Miama Nueva;
+}
+
+.all>.TimingDay>.broder,
+.all>.venues>.broder {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all>.TimingDay>.broder.broder-one,
+.all>.venues>.broder.broder-one {
+    border-top: 0.1vh solid rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
+}
+
+/* .all>.venues{
+    width: 100%;
+} */
+
+.all>.venues>.broder.broder-one>h2 {
+    line-height: 4vmax;
+    text-align: center;
+    width: 60%;
+    margin: 2vh auto;
+
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .content.main {
+        background: url(img/Гипс3.png), #fbfbfb;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 4vh;
+        background-position-x: -30vw;
+    }
+
+    .all>.one>.elips>.cont-card>.card {
+        height: 20vmin;
+    }
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5vmin 5vmin;
+    margin: 5vmin 0;
+    outline: none;
+    border: 1px solid #e3e3e3;
+    border-radius: 50px;
+    height: 13vmin;
+    line-height: 1vmin;
+    font-size: var(--font_h2);
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+    color: #464646;
+    background-color: #f1f1f1;
+    box-shadow: 0 1vmin 2vmin rgb(65 132 144 / 10%), 0 1vmin 3vmin rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+    width: 60%;
+}
+
+.btn:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+}
+
+.btn:hover {
+    transition: all 0.2s;
+    box-shadow: 0 7vmin 14vmin rgb(65 132 144 / 10%), 0 3vmin 6vmin rgb(0 0 0 / 8%);
+}
+
+.btn:active {
+    background-color: #e3e3e3;
+}
+
+.btn:disabled {
+    background-color: #eee;
+    border-color: #eee;
+    color: #444;
+    cursor: not-allowed;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.map {
+    display: flex;
+    width: 80vmin;
+    height: 80vmin;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    margin: 4vh 0;
+    border-radius: 1em;
+}
