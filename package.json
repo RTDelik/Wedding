@@ -1,6 +1,0 @@
-{
-    "scripts":{
-        "server": "json-server -w db.json"
-
-    }
-}
