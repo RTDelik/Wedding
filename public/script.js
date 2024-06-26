@@ -1,6 +1,6 @@
 function detectBrowser() {
   let result = 'Other';
-  if (navigator.userAgent.indexOf('YaBrowser') !== -1){
+  if (navigator.userAgent.indexOf('YaBrowser') !== -1) {
     result = 'Yandex Browser';
   } else if (navigator.userAgent.indexOf('Firefox') !== -1) {
     result = 'Mozilla Firefox';
@@ -37,18 +37,22 @@ emailjs.init("Qppb5Oxl1RGtJrmoo"); // Этот ID будет вашим вирт
 
 document.addEventListener('DOMContentLoaded', function () {
   // конечная дата, например 1 июля 2021
-  const deadline = new Date(2024, 9, 12, 15,0,0,0);
+  const deadlineCelebration = new Date(2024, 9, 12, 15, 0, 0, 0);
+  // const deadlineWedding = new Date(2024,7,9,11,50,0,0);
   // id таймера
   let timerId = null;
+  // console.log(deadlineWedding)
   // склонение числительных
   function declensionNum(num, words) {
     return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
   }
   // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
   function countdownTimer() {
-    const diff = deadline - new Date();
+    const diff = deadlineCelebration - new Date();
     if (diff <= 0) {
       clearInterval(timerId);
+      let clock = document.querySelector('#clock');
+      clock.style.display='none'
     }
     const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
     const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
@@ -69,27 +73,150 @@ document.addEventListener('DOMContentLoaded', function () {
   const $minutes = document.querySelector('#minute');
   const $seconds = document.querySelector('#seconds');
   // вызываем функцию countdownTimer
-  countdownTimer();
+  countdownTimer(deadlineCelebration);
   // вызываем функцию countdownTimer каждую секунду
   timerId = setInterval(countdownTimer, 1000);
 });
-function confirmation() {
+// document.addEventListener('DOMContentLoaded', function () {
+//   // конечная дата, например 1 июля 2021
+//   // const deadlineCelebration = new Date(2024, 9, 12, 15, 0, 0,0);
+//   const deadlineWedding = new Date(2024, 7, 9, 11, 50, 0, 0);
+//   const countingText = document.querySelector('#counting-text');
+//   // id таймера
+//   const timerId2 = null;
+//   var timeInterval = 1000;
+//   // склонение числительных
+//   function declensionNum(num, words) {
+//     return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+//   }
+//   function countingFun(timeSet, timeVar, realTime='after') {
+//     let declension = null;
+//     declension = declensionNum(timeSet, timeVar);
+//     if (realTime=='before'){
+//       countingText.innerHTML = `<h2>
+//             Бракосочетание состоится через `+ timeSet + ' ' + declension + `
+//           </h2>`
+//     }else{
+//       countingText.innerHTML = `<h2>
+//             Мы обручены уже `+ timeSet + ' ' + declension + `
+//           </h2>`
+//     }
+//   }
+//   // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+//   function countdownTimer() {
+//     const diff = deadlineWedding - new Date();
+//     let year = null;
+//     let month = null;
+//     let days = null;
+//     let hours = null;
+//     let minutes = null;
+//     let seconds = null;
+//     if (diff >= 0) {
+//       days = Math.floor(diff / 1000 / 60 / 60 / 24);
+//       hours = Math.floor(diff / 1000 / 60 / 60) % 24;
+//       minutes = Math.floor(diff / 1000 / 60) % 60;
+//       seconds = Math.floor(diff / 1000) % 60;
+//       if(days>0){
+//         countingFun(days, ['день', 'дня', 'дней'],'before')
+//         timeInterval *= 60*60;
+//         console.log(timeInterval)
+//       }else{
+//         if(hours>0){
+//           countingFun(hours, ['час', 'часа', 'часов'],'before')
+//           timeInterval *= 60;
+//           console.log(timeInterval)
+//         }else{
+//           if(minutes>0){
+//             countingFun(minutes, ['минута', 'минуты', 'минут'],'before')
+//             // timeInterval *= 60;
+//             console.log(timeInterval)
+//           }else{
+//             if(seconds>0){
+//               countingFun(seconds, ['секунду', 'секунды', 'секунд'],'before')
+//               // timeInterval /= 60;
+//               console.log(timeInterval)
+//             }  
+//           }
+//         }
+//       }
+//     } else {
+//       year = new Date().getFullYear() - deadlineWedding.getFullYear();
+//       month = new Date().getMonth() - deadlineWedding.getMonth();
+//       days = Math.floor((diff * -1) / 1000 / 60 / 60 / 24);
+//       hours = Math.floor((diff * -1) / 1000 / 60 / 60);
+//       minutes = Math.floor((diff * -1) / 1000 / 60);
+//       seconds = Math.floor((diff * -1) / 1000);
+//       if (seconds < 60) {
+//         countingFun(seconds, ['секунду', 'секунды', 'секунд'])
+//       } else {
+//         console.log('Больше минуты')
+//         // timeInterval *= 60;
+//         if (minutes < 60) {
+//           countingFun(minutes, ['минута', 'минуты', 'минут'])
+//         } else {
+//           console.log('Больше часа')
+//           timeInterval *= 60;
+//           if (hours < 24) {
+//             countingFun(hours, ['час', 'часа', 'часов'])
+//           } else {
+//             console.log('Больше дня')
+//             clearInterval(timerId2);
+//             if (month <= 0) {
+//               countingFun(days, ['день', 'дня', 'дней'])
+//             } else {
+//               console.log('Больше месяца')
+//               if (year <= 0) {
+//                 countingFun(month, ['месяц', 'месяца', 'месяцев'])
+//               } else {
+//                 console.log('Больше года')
+//                 countingFun(year, ['год', 'года', 'лет']);
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     // console.log('Лет: ', year);
+//     // console.log('Месяцев: ', month);
+//     // console.log('Дней: ', days);
+//     // console.log('Часов: ', hours);
+//     // console.log('Минут: ', minutes);
+//     // console.log('Секунд: ', seconds);
+//   }
+//   // получаем элементы, содержащие компоненты даты
+//   // const $days = document.querySelector('#day');
+//   // const $hours = document.querySelector('#hours');
+//   // const $minutes = document.querySelector('#minute');
+//   // const $seconds = document.querySelector('#seconds');
+//   // вызываем функцию countdownTimer
+//   countdownTimer();
+//   // вызываем функцию countdownTimer каждую секунду
+//   timerId2 = setInterval(countdownTimer, timeInterval);
+// });
+function confirmation(q) {
   let d = document.querySelector('form');
-  d.style.display = 'initial'
-  // d.classList.toggle('active')
-  let btn = document.querySelector('#confirmation')
-  btn.style.display = 'none';
   let a = document.querySelector('.questionnaire>h2')
-  a.innerText = 'И ответьте, пожалуйста, на несколько вопросов, для нас это важно!'
-  document.querySelector('#contactForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Не обновляйте страницу, пока сообщение не отправлено
-    emailjs.sendForm('service_irv9ab8', 'template_xvi2xxw', this)
-      .then(function () {
-        alert('Сообщение успешно отправлено!');
-      }, function (error) {
-        alert('Ошибка отправки: ' + error);
-      });
-  });
+  if (q == 'one') {
+    d.style.display = 'initial'
+    // d.classList.toggle('active')
+    let btn = document.querySelector('#confirmation')
+    btn.style.display = 'none';
+    a.innerText = 'И ответьте, пожалуйста, на несколько вопросов, для нас это важно!'
+    document.querySelector('#contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Не обновляйте страницу, пока сообщение не отправлено
+      emailjs.sendForm('service_irv9ab8', 'template_xvi2xxw', this)
+        .then(function () {
+          alert('Сообщение успешно отправлено!');
+        }, function (error) {
+          alert('Ошибка отправки');
+          // console.dir(error)
+        });
+    });
+  } if (q == 'two') {
+    d.style.display = 'none'
+    a.innerText = 'Благодарим вас за отзывчивость'
+    document.querySelector('#indicator').style.display = 'none'
+  }
 
   //   console.log(a);
 };
