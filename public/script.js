@@ -37,7 +37,7 @@ emailjs.init("Qppb5Oxl1RGtJrmoo"); // Этот ID будет вашим вирт
 
 document.addEventListener('DOMContentLoaded', function () {
   // конечная дата, например 1 июля 2021
-  const deadline = new Date(2024, 10, 12);
+  const deadline = new Date(2024, 9, 12, 15,0,0,0);
   // id таймера
   let timerId = null;
   // склонение числительных
