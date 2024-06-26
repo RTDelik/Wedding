@@ -80,10 +80,19 @@ header {
     width: 100vw;
     box-shadow: 0px 1vh 3vh rgba(122, 122, 122, 0.5);
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bloc-time-all {
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 0vh 8vw; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.bloc-time-painting {
     display: flex;
     flex-wrap: wrap;
     /* gap: 0vh 8vw; */
@@ -127,6 +136,27 @@ header {
 
 .bloc-time>p {
     font-size: var(--font_h4);
+    width: 100%;
+    text-align: start;
+    font-weight: bolder;
+}
+.bloc-time-painting>.bloc-time {
+    width: 0vmax;
+}
+
+.bloc-time-painting>.bloc-time>span {
+    width: 5vmax;
+    height: 5vh;
+}
+
+.bloc-time-painting>.bloc-time>span>p {
+    font-size: var(--font_p);
+    top: 50%;
+    left: 47%;
+}
+
+.bloc-time-painting>.bloc-time>p {
+    font-size: var(--font_p);
     width: 100%;
     text-align: start;
     font-weight: bolder;
@@ -345,10 +375,10 @@ header {
     display: none;
 }
 .all>.DressCode>.container-color-blok>.color-block{
-    width: 50%;
+    width: 75%;
 }
 .all>.DressCode>.container-color-blok>.empty{
-    width: 40%;
+    width: 20%;
 }
 
 .all>.DressCode>.container-color-blok>.color-block>.color {
@@ -359,8 +389,8 @@ header {
     box-shadow: 2vmax 3vmax 2.5vmax 0px rgba(0, 0, 0, 0.25);
 }
 .all>.DressCode>.container-color-blok>.color-block img {
-    width: 5vmax;
-    height: 5vmax;
+    width: 10vmax;
+    height: 10vmax;
     
 }
 
@@ -458,7 +488,7 @@ header {
 
 .all>.Questionnaire>form>input {
     font-size: 5vmin;
-    width: 80%;
+    width: 90%;
 }
 
 /* div {
@@ -611,9 +641,24 @@ header {
     display: flex;
     width: 80vmin;
     height: 80vmin;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: #f1f1f1;
     margin: 4vh 0;
     border-radius: 1em;
+    flex-direction: column;
+}
+.map a {
+    color: unset;
+    text-align: center;
+    width: 80%;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e5e5e5;
+    font-size: var(--font_h2);
+}
+.map a:hover {
+    background-color: #b4ac9e;
 }
