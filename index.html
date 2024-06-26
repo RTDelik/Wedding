@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -24,37 +23,41 @@
             <p id="and">&</p>
             <p id="NameW">Валерия</p>
         </div>
-        <div class="main-clock">
+        <div class="main-clock" id="clock">
             <div class="bloc-time-all">
-                
+
                 <div class="bloc-time">
                     <span>
-                        <p id="day">07</p>
+                        <p id="day">00</p>
                     </span>
                     <p>Дней</p>
                 </div>
                 <div class="bloc-time">
                     <span>
-                        <p id="hours">24</p>
+                        <p id="hours">00</p>
                     </span>
                     <p>Часов</p>
                 </div>
                 <div class="bloc-time">
                     <span>
-                        <p id="minute">60</p>
+                        <p id="minute">00</p>
                     </span>
                     <p>Минут</p>
                 </div>
                 <div class="bloc-time">
                     <span>
-                        <p id="seconds">26</p>
+                        <p id="seconds">00</p>
                     </span>
                     <p>Секунд</p>
                 </div>
             </div>
         </div>
+        <!-- <div class="main-clock bloc-time-painting">
+                <h2 id="counting-text">Бракосочетание состоится через
+                </h2>
+        </div> -->
         <div class="content main-final">
-            <p>Приглашаем вас на очень при очень долгожданную свадьбу</p>
+            <p>Приглашаем вас на очень преочень долгожданную свадьбу</p>
             <p>12.10.2024 г</p>
         </div>
         <!-- <img src="public\img\gypsophila_2.png"> -->
@@ -91,25 +94,33 @@
         <span class="content venues">
             <div class="broder broder-one">
                 <h2>
-                    <a href="https://yandex.ru/maps/-/CDbxuXJh">Ждём вас по адресу: г. Волжский, микрорайон Южный, ул. Покровская 7</a>
+                    Ждём вас по адресу: <a href="https://yandex.ru/maps/-/CDbxuXJh">г. Волжский, микрорайон Южный, ул.
+                        Покровская 7</a>
                 </h2>
             </div>
             <div class="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa856a98aaeef6920cc0446d66dae23325d4b04d0435229252c828f25e7d7b807&amp;width=90%25&amp;height=80%25&amp;lang=ru_RU&amp;scroll=true"></script>
+                <!-- <a href="https://yandex.ru/maps/-/CDbxuXJh"></a> -->
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa856a98aaeef6920cc0446d66dae23325d4b04d0435229252c828f25e7d7b807&amp;width=90%25&amp;height=80%25&amp;lang=ru_RU&amp;scroll=true"></script>
+                <!-- <a href="yandexnavi://">Нажми для построения маршрута</a> -->
+                <a href="https://yandex.ru/maps/-/CDbxuXJh">Нажми для построения маршрута</a>
             </div>
-            </span>
-            <span class="content TimingDay">
+        </span>
+        <span class="content TimingDay">
             <div class="separator sep_TimingDay">
             </div>
-        <h1>Тайминг дня</h1>
+            <h1>Тайминг дня</h1>
             <div class="broder broder-one">
-                <h2>Сборы гостей</h2><h2>15:00</h2>
+                <h2>Сборы гостей</h2>
+                <h2>15:00</h2>
             </div>
             <div class="broder broder-two">
-                <h2>Выездная регистрация</h2><h2>15:30</h2>
+                <h2>Выездная регистрация</h2>
+                <h2>15:30</h2>
             </div>
             <div class="broder broder-one">
-                <h2>Банкет</h2><h2>16:00</h2>
+                <h2>Банкет</h2>
+                <h2>16:00</h2>
             </div>
         </span>
         <span class="content DressCode">
@@ -157,13 +168,13 @@
                 </p>
                 <img src="public/img/Бокалы.png"></img>
                 <hr align="center" width="100%" size="3" color="#a08f76">
-                
+
                 <img src="public/img/Сердце2.png"></img>
                 <p class="p-text">Мы будем признательны, если вместо букета вы поможете нам в украшении зала.<br>
                     Что бы узнать, как это сделать свяжитесь с нами.
                 </p>
                 <hr align="center" width="100%" size="3" color="#a08f76">
-                <p class="p-text p-left" >По всем возникающим вопросам обращайтесь<br>
+                <p class="p-text p-left">По всем возникающим вопросам обращайтесь<br>
                     Андрей<br>
                     <u>8-905-399-76-59</u><br>
                     Валерия<br>
@@ -171,15 +182,16 @@
                 </p>
                 <img src="public/img/Кольца.png"></img>
                 <hr align="center" width="100%" size="3" color="#a08f76">
-                    <img src="public/img/птичка.png"></img>
-                    <p class="p-text p-right">Если вы хотите устроить нам сюрприз в день торжества, свяжитесь с нашим ведущим <br>
-                        Роман<br>
-                        <u>Номер</u>
-                    </p>
-                    </div>
-                    
-                    </span>
-                    <span class="content Questionnaire">
+                <img src="public/img/птичка.png"></img>
+                <p class="p-text p-right">Если вы хотите устроить нам сюрприз в день торжества, свяжитесь с нашим
+                    ведущим <br>
+                    Роман<br>
+                    <u>Номер</u>
+                </p>
+            </div>
+
+        </span>
+        <span class="content Questionnaire">
             <div class="separator"></div>
             <h1>Анкета</h1>
             <div class="questionnaire">
@@ -191,24 +203,27 @@
                 <h2>Ваше имя и фамилия</h2>
                 <input id="FI" name="FI">
                 <h2>В каком составе вас ждать?<br>(супруги, вторые половинки, дети)</h2>
-                <input name="family"></input>
+                <textarea name="family"></textarea>
                 <h2>Подтвердите своё присутствие</h2>
                 <div class="presence">
                     <p><input type="radio" name="presence" value="Да, с удовольствием">Да, с удовольствием</p>
-                    <p><input type="radio" name="presence" value="К сожалению, не смогу (не сможем)">К сожалению, не смогу (не сможем)</p>
+                    <p><input type="radio" name="presence" value="К сожалению, не смогу (не сможем)">К сожалению, не
+                        смогу (не сможем)</p>
                     <p><input type="radio" name="presence" value="Нужно время подумать">Нужно время подумать</p>
                 </div>
                 <h2>Уточните ваши предпочтения в алкоголе и еде</h2>
                 <h2>Алкоголь:</h2>
                 <div class="alcohol">
-                    <p><input type="checkbox" name="alcohol" value="Вино красное полусладкое ">Вино красное полусладкое</p>
+                    <p><input type="checkbox" name="alcohol" value="Вино красное полусладкое ">Вино красное полусладкое
+                    </p>
                     <p><input type="checkbox" name="alcohol" value="Вино красное сухое ">Вино красное сухое</p>
                     <p><input type="checkbox" name="alcohol" value="Вино белое полусладкое ">Вино белое полусладкое</p>
                     <p><input type="checkbox" name="alcohol" value="Вино белое сухое ">Вино белое сухое</p>
                     <p><input type="checkbox" name="alcohol" value="Шампанское ">Шампанское</p>
                     <p><input type="checkbox" name="alcohol" value="Водка ">Водка</p>
                     <p><input type="checkbox" name="alcohol" value="Коньяк ">Коньяк</p>
-                    <p><input type="checkbox" name="alcohol" value="Только безалкогольные напитки ">Только безалкогольные напитки</p>
+                    <p><input type="checkbox" name="alcohol" value="Только безалкогольные напитки ">Только
+                        безалкогольные напитки</p>
                 </div>
                 <h2>Еда:</h2>
                 <div class="meal">
@@ -221,13 +236,13 @@
                 <!-- <div class="container"> -->
                 <!-- <input type="button" id="button"> -->
                 <!-- <button id="button"></button> -->
-                  <!-- </div> -->
-                <button class="btn">Отправить</button>
+                <!-- </div> -->
+                <button class="btn" onclick="confirmation('two')">Отправить</button>
             </form>
-            <button class="btn" id="confirmation" onclick="confirmation()">Подтверждаем</button>
+            <button class="btn" id="confirmation" onclick="confirmation('one')">Подтверждаем</button>
         </span>
-        
-        
+
+
     </div>
 
 </html>
