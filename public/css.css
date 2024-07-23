@@ -38,6 +38,24 @@ body {
 header {
     background: #fdfdfd;
 }
+#textH1 {
+    text-align: center;
+    background: #e8ece8;
+    display: ruby-text;
+    font-style: oblique;
+    -webkit-animation: textH1 3s linear infinite;
+    animation: textH1 3s linear infinite;
+  }
+  @-webkit-keyframes textH1 {
+    0% { color: rgba(34, 34, 34, 1); }
+    50% { color: rgba(34, 34, 34, 0); }
+    100% { color: rgba(34, 34, 34, 1); }
+  }
+  @keyframes textH1 {
+    0% { color: rgba(34, 34, 34, 1); }
+    50% { color: rgba(34, 34, 34, 0); }
+    100% { color: rgba(34, 34, 34, 1); }
+  }
 
 
 
