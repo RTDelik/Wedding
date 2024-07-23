@@ -31,7 +31,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     color: rgba(70, 70, 70, 1);
 }
 
@@ -232,6 +232,7 @@ header {
     background-size: contain;
     width: 100%;
     position: relative;
+    display: none;
 }
 
 .separator {
@@ -258,6 +259,9 @@ header {
     background-position-x: center;
 }
 
+/* .content>.all{
+    display: none;
+} */
 
 .all>.one {
     width: 100%;
