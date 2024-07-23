@@ -221,7 +221,8 @@ function confirmation(q) {
   //   console.log(a);
 };
 window.onload = function() {
-  document.querySelector('body').style.overflowY = "unset"
+  document.querySelector('.all').style.display = "flex"
+  // document.querySelector('body').style.overflowY = "unset"
   document.querySelector('#textH1').style.display = "none"
   console.log('Сайт загружен')
 }
