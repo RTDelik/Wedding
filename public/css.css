@@ -11,7 +11,6 @@
     --font_h4: 3vmin;
     --font_p: 3vmin;
 }
-
 h1 {
     font-size: var(--font_h1);
 }
@@ -291,11 +290,37 @@ header {
 .all>.one>.elips>.cont-card>.card>img {
     margin: 1vh;
     height: 70%;
+    /* animation: rotate 3s linear infinite;
+    animation-delay: 2.5s; */
 }
+/* .all>.one>.elips>.cont-card>.card>img:hover{
 
+} */
 .all>.one>.elips>.cont-card>.card-one {
     transform: rotate(10deg);
     z-index: 9;
+}
+@keyframes rotate {
+    0% {
+        opacity: 1;
+        /* transform: rotate(0) scale(1); */
+    }
+    50% {
+        /* transform: rotate(0) scale(1); */
+        opacity: 1;
+    } 
+    59.99999% {
+        /* transform: rotate(45deg) scale(3); */
+        opacity: 0;
+        z-index: 1;
+    }   
+    60% {
+        opacity: 0;
+        z-index: -1;
+    }  
+    100% {
+        opacity: 1;
+    }  
 }
 
 .all>.one>.elips>.cont-card>.card-two {
@@ -367,7 +392,7 @@ header {
 .all>.DressCode>.container-color-blok {
     display: flex;
     flex-wrap: wrap;
-    gap: 6vh 4vw;
+    gap: 2vh 4vw;
     justify-content: center;
     width: 80%;
 }
