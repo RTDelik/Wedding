@@ -220,4 +220,8 @@ function confirmation(q) {
 
   //   console.log(a);
 };
+window.onload = function() {
+  document.querySelector('body').style.overflowY = "unset"
+  console.log('Сайт загружен')
+}
 
