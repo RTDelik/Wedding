@@ -222,6 +222,7 @@ function confirmation(q) {
 };
 window.onload = function() {
   document.querySelector('body').style.overflowY = "unset"
+  document.querySelector('#textH1').style.display = "none"
   console.log('Сайт загружен')
 }
 
