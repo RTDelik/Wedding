@@ -14,7 +14,10 @@
 
 <body>
     <header>
-        <h1 id="textH1">Дождитесь загрузки сайта для просмотра пригласительного</h1>
+        <div id="textH1">
+            <h1 >Дождитесь загрузки сайта для просмотра пригласительного</h1>
+            <h2>Если данная надпись не пропадает длительное время, проверьте подключение с интернетом и отключите VPN</h2>
+        </div>
     </header>
     <span class="content main">
         <div class="content main-logo">
@@ -190,7 +193,7 @@
                 <h2>Ваше имя и фамилия</h2>
                 <input id="FI" name="FI">
                 <h2>В каком составе вас ждать?<br>(супруги, вторые половинки, дети)</h2>
-                <textarea name="family"></textarea>
+                <textarea name="family" placeholder="Пример: супруг - Пупкин Иван и дочь - Анна"></textarea>
                 <h2>Подтвердите своё присутствие</h2>
                 <div class="presence">
                     <p><input type="radio" name="presence" value="Да, с удовольствием">Да, с удовольствием</p>
@@ -218,11 +221,11 @@
                     <p><input type="radio" name="meal" value="Мясо ">Мясо</p>
                     <p><input type="radio" name="meal" value="Вегетарианец ">Вегетарианец</p>
                 </div>
-                <h2>Если у вас есть аллергия на какие-либо продукты укажите об этом в графе ниже:</h2>
-                <input name="allergy">
+                <h2>Коментарии:</h2>
+                <textarea name="allergy" placeholder="Если вы хотите оставить дополнительный коментарий, к примеру у вас есть на что-то алергия или хотите указать кто что будет кушать или пить пишите сюда."></textarea>
                 <button class="btn" onclick="confirmation('two')">Отправить</button>
             </form>
-            <button class="btn" id="confirmation" onclick="confirmation('one')">Подтверждаем</button>
+            <button class="btn" id="confirmation" onclick="confirmation('one')">Анкета</button>
         </span>
 
 
