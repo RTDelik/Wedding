@@ -38,7 +38,12 @@ body {
 header {
     background: #fdfdfd;
 }
+textarea {
+    width: 90%;
+    height: 10vh;
+}
 #textH1 {
+    padding: 0 10vw;
     text-align: center;
     background: #e8ece8;
     display: ruby-text;
